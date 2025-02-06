@@ -1,0 +1,116 @@
+/* Tổng thể container */
+.container {
+  width: 100%;
+  max-width: 1400px; /* Tăng giới hạn chiều rộng */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Phần văn bản */
+.landing_text {
+  flex: 1;
+  max-width: 700px; /* Tăng chiều rộng tối đa */
+  text-align: left; /* Căn lề trái */
+}
+
+.mainHeading {
+  font-size: 3.5rem; /* Tăng kích thước tiêu đề */
+  font-weight: bold;
+  margin-bottom: 30px; /* Thêm khoảng cách dưới */
+  line-height: 1.2; /* Đảm bảo tiêu đề không quá sát */
+}
+
+.primaryText {
+  color: #007bff; /* Màu xanh nổi bật */
+}
+
+.subText {
+  font-size: 1.3rem; /* Tăng kích thước font mô tả */
+  margin-bottom: 40px; /* Tăng khoảng cách với nút */
+  color: #555;
+  line-height: 1.6; /* Tăng độ giãn dòng */
+}
+
+/* Nút hành động */
+.btnWrapper {
+  display: flex;
+  gap: 20px; /* Tăng khoảng cách giữa các nút */
+}
+
+.primaryBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 25px; /* Tăng padding */
+  font-size: 1.2rem; /* Tăng kích thước chữ */
+  border-radius: 8px; /* Bo góc nhiều hơn */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 15px 25px; /* Tăng padding */
+  font-size: 1.2rem; /* Tăng kích thước chữ */
+  border-radius: 8px; /* Bo góc nhiều hơn */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Phần hình ảnh */
+.landing_img {
+  flex: 1; /* Tăng kích thước hình ảnh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px; /* Giới hạn chiều rộng hình ảnh */
+  height: auto;
+  object-fit: contain; /* Đảm bảo hình ảnh không bị cắt */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Thêm shadow cho hình ảnh */
+  border-radius: 10px; /* Bo góc cho hình ảnh */
+}
+.landing_img {
+  flex: 1.5; /* Tăng tỷ lệ chiếm không gian của ảnh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.image {
+  width: 100%;
+  max-width: 800px; /* Tăng giới hạn chiều rộng của ảnh */
+  height: auto; /* Đảm bảo tỷ lệ ảnh không bị méo */
+  object-fit: cover; /* Đảm bảo ảnh vừa khung nhưng không bị cắt nhiều */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Tăng độ bóng cho ảnh */
+  border-radius: 12px; /* Bo góc cho ảnh */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng phóng to khi hover */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Phóng to ảnh nhẹ khi hover */
+}
+
+/* Phần bố cục chính */
+.landing_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  gap: 50px; /* Điều chỉnh khoảng cách giữa text và ảnh */
+}

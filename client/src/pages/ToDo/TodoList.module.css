@@ -1,0 +1,137 @@
+.toDoCard {
+  background: #fff;
+  padding: 20px; /* Tăng khoảng cách bên trong */
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm đổ bóng nhẹ */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hiệu ứng khi hover */
+}
+
+.toDoCard:hover {
+  transform: translateY(-5px); /* Hiệu ứng nổi lên */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng đậm hơn khi hover */
+}
+
+.toDoCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px; /* Tăng khoảng cách dưới header */
+}
+
+.toDoCardHeader h3 {
+  font-size: 20px; /* Kích thước tiêu đề */
+  font-weight: 600; /* Chữ đậm hơn */
+  color: #333;
+  margin: 0;
+}
+
+.toDoCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.toDoFooterAction {
+  display: flex;
+  gap: 16px; /* Tăng khoảng cách giữa các icon */
+}
+
+.actionIcon {
+  cursor: pointer;
+  font-size: 20px; /* Kích thước icon */
+  transition: color 0.2s ease, transform 0.2s ease; /* Hiệu ứng hover */
+}
+
+.actionIcon:hover {
+  color: #007bff; /* Đổi màu khi hover */
+  transform: scale(1.2); /* Phóng to khi hover */
+}
+
+.toDoCard p {
+  font-size: 16px;
+  color: #555; /* Màu chữ mô tả */
+  margin: 0;
+}
+
+.toDoCardFooter .ant-tag {
+  font-size: 14px; /* Kích thước thẻ tag */
+}
+
+.toDoCardFooter .ant-tag.cyan {
+  background-color: #e6f7ff;
+  color: #0050b3;
+}
+
+.toDoCardFooter .ant-tag.red {
+  background-color: #fff1f0;
+  color: #a8071a;
+}
+
+.toDoList {
+  display: grid; /* Sử dụng grid để sắp xếp */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Hiển thị tối đa 4 card trên một dòng */
+  gap: 20px; /* Khoảng cách giữa các card */
+}
+
+/* Thêm margin-top cho container */
+.toDoWrappers {
+  padding: 40px; /* Giữ khoảng cách padding hiện tại */
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  margin-top: 10px; /* Khoảng cách phía trên để tránh navbar */
+}
+
+
+.toDoHeaders {
+  display: flex; /* Sử dụng flexbox */
+  justify-content: space-between; /* Dàn đều khoảng cách */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.toDoHeaders input {
+  flex: 1; /* Để ô tìm kiếm chiếm toàn bộ không gian còn lại */
+  margin-right: 10px; /* Khoảng cách giữa ô tìm kiếm và nút */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center; /* Căn giữa nút và dropdown */
+  gap: 10px; /* Khoảng cách giữa nút và dropdown */
+}
+
+.actionButtons button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actionButtons button:hover {
+  background-color: #0056b3;
+}
+
+.actionButtons select {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}

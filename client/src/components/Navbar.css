@@ -1,0 +1,119 @@
+/* Tổng thể navbar */
+.navbar {
+  background-color: #ffffff; /* Màu nền trắng */
+  padding: 10px 30px; /* Khoảng cách xung quanh */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  position: sticky; /* Giữ cố định khi cuộn */
+  top: 0;
+  z-index: 1000;
+  display: flex; /* Căn hàng ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Logo bên trái, menu bên phải */
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Khoảng cách giữa logo và chữ */
+}
+
+.navbar-logo img {
+  width: 100px; /* Kích thước logo */
+  height: auto; /* Giữ tỉ lệ logo */
+}
+
+.navbar-logo h4 {
+  font-size: 20px; /* Kích thước chữ logo */
+  font-weight: bold; /* Chữ đậm */
+  color: #007bff; /* Màu xanh */
+  margin: 0;
+}
+
+/* Menu */
+.navbar-menu {
+  list-style: none; /* Loại bỏ chấm danh sách */
+  display: flex; /* Menu ngang */
+  gap: 20px; /* Khoảng cách giữa các mục menu */
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0; 
+  margin-right: 40px;/* Đảm bảo menu không bị thu nhỏ */
+}
+
+/* Link điều hướng */
+.navbar-menu li a {
+  text-decoration: none; /* Loại bỏ gạch chân */
+  color: #333; /* Màu chữ */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: 500; /* Trọng lượng chữ vừa */
+  padding: 5px 15px; /* Khoảng cách trong mỗi mục */
+  border-radius: 6px; /* Bo góc */
+  transition: all 0.3s ease;
+  white-space: nowrap;
+   /* Ngăn chữ bị xuống dòng */
+}
+
+/* Hover và active */
+.navbar-menu li a:hover {
+  background-color: #007bff; /* Nền xanh khi hover */
+  color: #ffffff; /* Màu chữ trắng khi hover */
+}
+
+.navbar-menu li a.activeNav {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a,
+.logout-btn {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.logout-btn:hover {
+  color: #007bff;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.activeNav {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
+}
